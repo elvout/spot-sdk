@@ -6,3 +6,5 @@ pathlib2==2.3.0; python_version < '3.5'
 # The generated protobuf files in the bosdyn-api wheel only work with
 # protobuf >= 3.3
 protobuf>=3.3
+
+mypy-protobuf==3.2.0
