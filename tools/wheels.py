@@ -434,7 +434,7 @@ def build_proto_wheel(wheel_name="bosdyn-api", proto_dir=PROTO_DIR, latest_requi
         return False
 
     # Build the wheel.
-    build_wheel(pkg_name, srcdir=proto_dir, dry_run=dry_run, verbose=verbose)
+    build_wheel(pkg_name, srcdir=proto_dir, dry_run=dry_run, verbose=verbose, skip_git=skip_git)
 
     # Cleanup.
     _run_or_log('cleanup downloads', dry_run,
